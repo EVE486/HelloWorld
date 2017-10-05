@@ -1,0 +1,6 @@
+G:\VC2013\停车场系统0.5\停车场系统0.5\bin\Debug\停车场系统0.5.exe.config
+G:\VC2013\停车场系统0.5\停车场系统0.5\bin\Debug\停车场系统0.5.exe
+G:\VC2013\停车场系统0.5\停车场系统0.5\bin\Debug\停车场系统0.5.pdb
+G:\VC2013\停车场系统0.5\停车场系统0.5\obj\Debug\停车场系统0.5.csprojResolveAssemblyReference.cache
+G:\VC2013\停车场系统0.5\停车场系统0.5\obj\Debug\停车场系统0.5.exe
+G:\VC2013\停车场系统0.5\停车场系统0.5\obj\Debug\停车场系统0.5.pdb
