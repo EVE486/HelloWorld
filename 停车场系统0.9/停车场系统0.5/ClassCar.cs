@@ -10,8 +10,8 @@ namespace 停车场系统0._5
     {
         public string name;//车主姓名
         public string number;//车牌号码
-        public DateTime time1,time2;
-        public int position; //用来记录停到车库里的位置
+        public DateTime time1,time2;//入栈，出栈时间
+        
         public void checkName()
         {
             name = Console.ReadLine();
@@ -28,5 +28,7 @@ namespace 停车场系统0._5
         {
             time2 = DateTime.Now;
         }
+
+
     }
 }
