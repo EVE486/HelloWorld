@@ -12,7 +12,6 @@ namespace 停车场系统0._5
         public Stack stop = new Stack();
         public int n=0;   //控制车位
         public int card = 10000; //车辆编号，用来表示一共停留了多少车辆
-        public int nu;
         public ClassCar car0 = new ClassCar();
         public void into()
         {
@@ -27,10 +26,8 @@ namespace 停车场系统0._5
                 Console.WriteLine("登记成功");
                 car0.checkTime();
                 car0.position = n;
-                stop.Push(car0.position+"号位，编号："+card+",其车牌为" + car0.number + "的"+car0.name+"顾客成功停车" + "车辆到达时间为：" + car0.time1);
+                stop.Push("编号："+card+",车牌:" + car0.number + "姓名："+car0.name+"," + "车辆到达时间为：" + car0.time1); 
                 card++;
-                nu = n;
-                
 
             }
             else    //车位已满

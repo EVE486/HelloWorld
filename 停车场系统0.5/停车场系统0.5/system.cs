@@ -14,8 +14,8 @@ namespace 停车场系统0._5
     }
     class system
     {
-        
-        
+
+        static int p=1;
         queueRoad stop2 = new queueRoad();
         stackCar0 stop1 = new stackCar0();
         public void show()  //实现接口
@@ -24,9 +24,11 @@ namespace 停车场系统0._5
             Console.Write("在停车场中停车数：");
             Console.WriteLine(stop1.stop.Count);
             Console.WriteLine("详细列表：");
+            
             foreach(var s1 in stop1.stop)
             {
-                Console.WriteLine(s1 + " ");
+                    Console.WriteLine(s1 + " ");
+                    
             }
             Console.WriteLine("--------------------------------------------------------------------");
             Console.Write("在便道上暂停的车有：");
@@ -51,13 +53,20 @@ namespace 停车场系统0._5
 
         public void charge()
         {
+            
             TimeSpan go1 = new TimeSpan(stop1.car0.time1.Ticks);
             TimeSpan out1 = new TimeSpan(stop1.car0.time2.Ticks);
             TimeSpan span = go1.Subtract(out1).Duration();
             double money;
             money = span.Days * 45 + span.Hours * 2 + span.Minutes * 0.1;
             Console.WriteLine("------------------------------------------");
-            Console.WriteLine("顾客:" + stop1.car0.name + "正需要离开");
+            Console.WriteLine("离开客户信息：");
+            
+            //Console.Write(stop1.get.Peek()+" ");
+            
+            
+            Console.WriteLine(stop1.get.Peek());
+            stop1.get.Clear();
             Console.WriteLine("停留的时间为" + span);
             Console.WriteLine("缴纳的费用为：" + money);
             Console.WriteLine("------------------------------------------");

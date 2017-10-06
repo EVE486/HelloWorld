@@ -4,3 +4,9 @@ G:\VC2013\停车场系统0.5\停车场系统0.5\bin\Debug\停车场系统0.5.pdb
 G:\VC2013\停车场系统0.5\停车场系统0.5\obj\Debug\停车场系统0.5.csprojResolveAssemblyReference.cache
 G:\VC2013\停车场系统0.5\停车场系统0.5\obj\Debug\停车场系统0.5.exe
 G:\VC2013\停车场系统0.5\停车场系统0.5\obj\Debug\停车场系统0.5.pdb
+C:\Users\杳弋先生\Documents\HelloWorld\停车场系统0.5\停车场系统0.5\bin\Debug\停车场系统0.5.exe.config
+C:\Users\杳弋先生\Documents\HelloWorld\停车场系统0.5\停车场系统0.5\obj\Debug\停车场系统0.5.exe
+C:\Users\杳弋先生\Documents\HelloWorld\停车场系统0.5\停车场系统0.5\obj\Debug\停车场系统0.5.pdb
+C:\Users\杳弋先生\Documents\HelloWorld\停车场系统0.5\停车场系统0.5\bin\Debug\停车场系统0.5.exe
+C:\Users\杳弋先生\Documents\HelloWorld\停车场系统0.5\停车场系统0.5\bin\Debug\停车场系统0.5.pdb
+C:\Users\杳弋先生\Documents\HelloWorld\停车场系统0.5\停车场系统0.5\obj\Debug\停车场系统0.5.csprojResolveAssemblyReference.cache
