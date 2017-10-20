@@ -1,9 +1,0 @@
-G:\VC2013\电子书阅读器0.9\电子书阅读器0.9\bin\Debug\电子书阅读器0.9.exe.config
-G:\VC2013\电子书阅读器0.9\电子书阅读器0.9\bin\Debug\电子书阅读器0.9.exe
-G:\VC2013\电子书阅读器0.9\电子书阅读器0.9\bin\Debug\电子书阅读器0.9.pdb
-G:\VC2013\电子书阅读器0.9\电子书阅读器0.9\obj\Debug\电子书阅读器0.9.csprojResolveAssemblyReference.cache
-G:\VC2013\电子书阅读器0.9\电子书阅读器0.9\obj\Debug\电子书阅读器0._9.Form1.resources
-G:\VC2013\电子书阅读器0.9\电子书阅读器0.9\obj\Debug\电子书阅读器0._9.Properties.Resources.resources
-G:\VC2013\电子书阅读器0.9\电子书阅读器0.9\obj\Debug\电子书阅读器0.9.csproj.GenerateResource.Cache
-G:\VC2013\电子书阅读器0.9\电子书阅读器0.9\obj\Debug\电子书阅读器0.9.exe
-G:\VC2013\电子书阅读器0.9\电子书阅读器0.9\obj\Debug\电子书阅读器0.9.pdb

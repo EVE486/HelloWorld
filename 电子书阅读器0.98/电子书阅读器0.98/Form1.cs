@@ -38,14 +38,25 @@ namespace 电子书阅读器0._9
             numericUpDown1.Value = 0;
             //将列表listbox中选定项的索引加载到richTextBox1中
             if (listBox1.SelectedIndex >= 0)
+            { 
                 richTextBox1.LoadFile(t[this.listBox1.SelectedIndex], RichTextBoxStreamType.PlainText);
-            m = richTextBox1.TextLength / 550;
+                hum = 0;
+             }
+            m = richTextBox1.TextLength / 485;
             textBox2.Text = "该书页数："+m;
+            //if (this.richTextBox1.TextChanged)
+               // hum = 0;
+            
+        }
+        private void listBox1_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex >= 0 && listBox1.SelectedIndex < t.Length)
+                hum = 0;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button3_Click(object sender, EventArgs e) //添加书本
@@ -71,21 +82,33 @@ namespace 电子书阅读器0._9
          
         private void button1_Click(object sender, EventArgs e)//上翻
         {
+            
           if (listBox1.SelectedIndex >= 0 && listBox1.SelectedIndex < t.Length)
                 if (File.Exists(t[listBox1.SelectedIndex]))
                 {
-                    if (hum <= 0)
+                    if (m != 0)
                     {
-                        this.richTextBox1.Select(richTextBox1.Text.Length,richTextBox1.Text.Length);
-                        this.richTextBox1.ScrollToCaret();
-                        
-                    }
-                    else
-                    {
-                        hum = hum - 25;
-                        start = this.richTextBox1.GetFirstCharIndexFromLine(hum);
-                        this.richTextBox1.SelectionStart = start;
-                        this.richTextBox1.ScrollToCaret();
+                        if (hum <= 0)
+                        {
+
+                            //this.richTextBox1.Select(richTextBox1.Text.Length,richTextBox1.Text.Length);
+                            start = this.richTextBox1.GetFirstCharIndexFromLine(0);
+                            this.richTextBox1.SelectionStart = start;
+                            this.richTextBox1.ScrollToCaret();
+
+                        }
+                        else
+                        {
+
+                            if (numericUpDown1.Value != 0)
+                            {
+                                numericUpDown1.Value--;
+                            }
+                            hum = hum - 25;
+                            start = this.richTextBox1.GetFirstCharIndexFromLine(hum);
+                            this.richTextBox1.SelectionStart = start;
+                            this.richTextBox1.ScrollToCaret();
+                        }
                     }
                 }
         }
@@ -95,24 +118,31 @@ namespace 电子书阅读器0._9
             if (listBox1.SelectedIndex >= 0 && listBox1.SelectedIndex < t.Length)
                 if (File.Exists(t[listBox1.SelectedIndex]))
             {
+                if (m != 0)
+                {
+                    int x1;
+                    x1 = richTextBox1.Text.Length / 22;
+                    if (hum > x1)
+                    {
+                        this.richTextBox1.Select(richTextBox1.Text.Length, 0);
+                        this.richTextBox1.ScrollToCaret();
 
-                int x1;
-                x1 = richTextBox1.Text.Length/22;
-                if (hum > x1)
-                {
-                    this.richTextBox1.Select(richTextBox1.Text.Length, 0);
-                    this.richTextBox1.ScrollToCaret();
-                    
+                    }
+                    else
+                    {
+
+                        if (numericUpDown1.Value != m)
+                        {
+                            numericUpDown1.Value++;
+                        }
+                        hum = hum + 25;
+                        start = this.richTextBox1.GetFirstCharIndexFromLine(hum);
+                        this.richTextBox1.SelectionStart = start;
+                        this.richTextBox1.ScrollToCaret();
+
+                    }
+                    // this.richTextBox1.Select(richTextBox1.Text.Length, 0);
                 }
-                else
-                {
-                    hum = hum + 25;
-                    start = this.richTextBox1.GetFirstCharIndexFromLine(hum);
-                    this.richTextBox1.SelectionStart = start;
-                    this.richTextBox1.ScrollToCaret();
-                    
-                }
-                // this.richTextBox1.Select(richTextBox1.Text.Length, 0);
             }
         }
 
@@ -139,6 +169,12 @@ namespace 电子书阅读器0._9
                   this.richTextBox1.ScrollToCaret();
                   
               }
+              else if(numericUpDown1.Value==0)
+              {
+                  start = this.richTextBox1.GetFirstCharIndexFromLine(0);
+                  this.richTextBox1.SelectionStart = start;
+                  this.richTextBox1.ScrollToCaret();
+              }
             }
         }
          
@@ -148,6 +184,11 @@ namespace 电子书阅读器0._9
         private void textBox2_TextChanged(object sender, EventArgs e) //当前页数
         {
            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
 
        /* class Book
